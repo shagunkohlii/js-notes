@@ -1,12 +1,11 @@
 const arr = [2, 3, 4, 19, 5, 6]
 
-
 // const findMax = function(arr){
 //     let max = 0;
 //     for(let i = 0; i<arr.length; i++){
 //         if(arr[i] > max){
 //             max = arr[i]
-//         }
+//         } 
 //     }
 //     return max
 // }
@@ -18,7 +17,6 @@ const max = arr.reduce((max, curr) => {
         max = curr;
     }
     return max;
-
 }, 0)
 console.log(max)
 
@@ -27,12 +25,12 @@ console.log(sumOutput)
 
 // examples of reduce
 const users = [
-    { firstName: "shagun", lastName: "kohlii", age: 21 },
+    { firstName: "shagun", lastName: "kohli", age: 21 },
     { firstName: "elan", lastName: "musk", age: 45 },
     { firstName: "aman", lastName: "kohli", age: 21 },
     { firstName: "asha", lastName: "kohli", age: 27 },
     { firstName: "ranvijay", lastName: "kohli", age: 7 }
-]
+];
 
 const usersAge = users.reduce((acc, curr) => {
     if (acc[curr.age]) {
@@ -42,7 +40,6 @@ const usersAge = users.reduce((acc, curr) => {
         acc[curr.age] = 1;
     }
     return acc;
-
 }, {})
 console.log(usersAge)
 
@@ -54,6 +51,5 @@ const ageless25 = users.reduce((acc,curr)=>{
     }
     return acc
 },[])
-
+ 
 console.log(ageless25)
-
